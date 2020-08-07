@@ -68,14 +68,14 @@ function pageStudy(req, res) {
 }
 
 function pageGiveClasses(req, res) {
-   const dados = req.query
+    const dados = req.query
 
     console.log(dados)
-    if(dados) {
+    if (dados) {
         console.log('entrei aqui')
         proffys.push(dados)
     }
-    
+} // <- estava faltando esta chave para fechar a funcao pageGiveClasses
 
 
 
@@ -100,5 +100,3 @@ server
     .get('/give-classes', pageGiveClasses)
     // start do servidor 
     .listen(5500)
-}
-    //Fazendo um teste do commit no github 
