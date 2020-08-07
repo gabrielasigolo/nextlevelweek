@@ -71,12 +71,12 @@ function pageGiveClasses(req, res) {
    const dados = req.query
 
     console.log(dados)
-   //se tiver dados
-    if (dados) {
-        console.log(dados)('entrei aqui')
-        //adicionar dados a lista de proffys 
+    if(dados) {
+        console.log('entrei aqui')
         proffys.push(dados)
-}
+    }
+    
+
 
 
 //Servidor
