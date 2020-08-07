@@ -68,7 +68,14 @@ function pageStudy(req, res) {
 }
 
 function pageGiveClasses(req, res) {
-    return res.render('give-classes.html', { subjects, weekdays })
+   const dados = req.query
+
+    console.log(dados)
+   //se tiver dados
+    if (dados) {
+        console.log(dados)('entrei aqui')
+        //adicionar dados a lista de proffys 
+        proffys.push(dados)
 }
 
 
